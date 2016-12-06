@@ -1,0 +1,62 @@
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" tools:context=".chaptersmain"
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+        >
+
+
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"
+
+
+            ></include>
+
+        <android.support.v4.widget.DrawerLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/drawer_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_marginTop="50dp">
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:id="@+id/listchapter"   >
+
+    </ListView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+
+            <ListView
+                android:id="@+id/navList"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|start"
+                android:background="#808080"
+
+                tools:ignore="RtlHardcoded" />
+        </android.support.v4.widget.DrawerLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:layout_width="fill_parent" android:alpha="0.5"
+            android:layout_height="wrap_content"
+            android:id="@+id/adv1"  ads:adSize="BANNER" ads:adUnitId="@string/banner_ad_unit_id"
+            android:layout_above="@+id/drawer_layout" android:layout_alignParentBottom="true"
+            >
+
+
+        </com.google.android.gms.ads.AdView>
+    </RelativeLayout>
+
+
+
+
+
+
+

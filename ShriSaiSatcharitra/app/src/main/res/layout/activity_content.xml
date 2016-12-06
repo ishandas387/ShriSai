@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/back"
+    tools:context="com.ishan387.shrisaisatcharitra.content" android:background="@color/black">
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+
+        ></include>
+    <ScrollView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_below="@+id/tool_bar">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <TextView android:id="@+id/con" android:textColor="@color/white"  android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:elevation="5dp"
+        android:visibility="gone"
+        android:background="@color/primary"
+        android:alpha="0.7"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarb"
+        android:elevation="5dp"
+        android:background="@color/primary"
+        android:alpha="0.7"
+
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:id="@+id/next" android:src="@drawable/next"
+        android:alpha="0.5"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content" android:alpha="0.5"
+        android:layout_height="wrap_content" android:id="@+id/prev" android:src="@drawable/prev"
+        android:layout_alignTop="@+id/next"
+        android:layout_toRightOf="@+id/seekBar"
+        android:layout_toEndOf="@+id/seekBar" />
+
+
+</RelativeLayout>

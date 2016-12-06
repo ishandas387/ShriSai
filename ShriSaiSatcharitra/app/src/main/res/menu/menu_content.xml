@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ishan387.shrisaisatcharitra.content">
+    <item android:id="@+id/plus" android:title="font size"
+        android:orderInCategory="100" app:showAsAction="always" android:icon="@drawable/inc" />
+    <item android:id="@+id/minus" android:title="bookmark"
+        android:orderInCategory="300" app:showAsAction="never" />
+    <item android:id="@+id/switchback" android:title="switch background"
+        android:orderInCategory="200" app:showAsAction="never" />
+
+    <item android:id="@+id/bright" android:title="adjust screen brightness"
+        android:orderInCategory="200" app:showAsAction="always" android:icon="@drawable/bright"  />
+<!--    <item android:id="@+id/share" android:title="share"
+        android:orderInCategory="200" app:showAsAction="always" android:icon="@drawable/share" />-->
+
+</menu>

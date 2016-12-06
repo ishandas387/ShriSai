@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shri Sai Satcharitra</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_content">content</string>
+    <string name="banner_ad_unit_id">ca-app-pub-8256904848729072/2521628942</string>
+    <string name="title_activity_test">Test</string>
+
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+
+</resources>
